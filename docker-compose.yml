@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./frontend/Dockerfile
     ports:
-      - 80:8080
+      - 3000:3000
     volumes:
       - type: bind
         source: "./frontend"
@@ -20,7 +20,7 @@ services:
       context: .
       dockerfile: ./backend/Dockerfile
     ports:
-      - 3000:3000
+      - 8080:8080
     volumes:
       - type: bind
         source: "./backend"
